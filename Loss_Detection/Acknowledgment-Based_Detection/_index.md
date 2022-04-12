@@ -1,5 +1,5 @@
 ---
-title: "6.1 基于确认的检测"
+title: "6.1. 基于确认的检测"
 anchor: "6.1_Acknowledgment-Based_Detection"
 weight: 6100
 rank: "h2"

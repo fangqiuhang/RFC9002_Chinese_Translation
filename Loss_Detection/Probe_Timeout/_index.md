@@ -1,5 +1,5 @@
 ---
-title: "6.2 探测包超时"
+title: "6.2. 探测包超时"
 anchor: "6.2_Probe_Timeout"
 weight: 6200
 rank: "h2"

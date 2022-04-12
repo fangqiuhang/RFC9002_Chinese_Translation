@@ -1,5 +1,5 @@
 ---
-title: "7.3 拥塞控制的各种状态"
+title: "7.3. 拥塞控制的各种状态"
 anchor: "7.3_Congestion_Control_States"
 weight: 7300
 rank: "h2"

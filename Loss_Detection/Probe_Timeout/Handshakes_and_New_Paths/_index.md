@@ -1,5 +1,5 @@
 ---
-title: "6.2.2 握手与新路径"
+title: "6.2.2. 握手与新路径"
 anchor: "6.2.2_Handshakes_and_New_Paths"
 weight: 6220
 rank: "h3"
