@@ -15,4 +15,4 @@ If a packet is lost, the QUIC transport needs to recover from that loss, such as
 
 Loss detection is separate per packet number space, unlike RTT measurement and congestion control, because RTT and congestion control are properties of the path, whereas loss detection also relies upon key availability.
 
-不像RTT测量和拥塞控制那样，丢包检测是对每个数据包号空间独立的，因为RTT和拥塞控制都是路径的某些属性，而丢包检测还依赖着密钥的可用性。
+不像RTT测量和拥塞控制那样，每个数据包号空间中的丢包检测是独立的，因为RTT和拥塞控制都是路径的某些属性，而丢包检测还依赖着密钥的可用性。
