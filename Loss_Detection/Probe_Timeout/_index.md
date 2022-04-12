@@ -15,7 +15,7 @@ As with loss detection, the PTO is per packet number space. That is, a PTO value
 
 A PTO timer expiration event does not indicate packet loss and MUST NOT cause prior unacknowledged packets to be marked as lost. When an acknowledgment is received that newly acknowledges packets, loss detection proceeds as dictated by the packet and time threshold mechanisms; see Section 6.1.
 
-PTO计时器的超时事件并不表明数据包遭遇了丢包，并且它**必须不**使得在它之前的尚未确认的数据包被认定为丢包。当接收到确认且它新确认了一些数据包时，丢包检测机制会遵循数据包数量阈值和数据包发送时间阈值启动；详见[第6.1章]()。
+PTO计时器的超时事件并不表明数据包遭遇了丢包，并且它{{< req_level MUST_NOT >}}使得在它之前的尚未确认的数据包被认定为丢包。当接收到确认且它新确认了一些数据包时，丢包检测机制会遵循数据包数量阈值和数据包发送时间阈值启动；详见[第6.1章]()。
 
 The PTO algorithm used in QUIC implements the reliability functions of Tail Loss Probe [RFC8985], RTO [RFC5681], and F-RTO algorithms for TCP [RFC5682]. The timeout computation is based on TCP's RTO period [RFC6298].
 

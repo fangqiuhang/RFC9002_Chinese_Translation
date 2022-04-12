@@ -27,4 +27,4 @@ The acknowledgment indicates that a packet sent later was delivered, and the pac
 
 Spuriously declaring packets as lost leads to unnecessary retransmissions and may result in degraded performance due to the actions of the congestion controller upon detecting loss. Implementations can detect spurious retransmissions and increase the packet or time reordering threshold to reduce future spurious retransmissions and loss events. Implementations with adaptive time thresholds MAY choose to start with smaller initial reordering thresholds to minimize recovery latency.
 
-将数据包错误地认定为丢包会导致不必要的重传，并有可能因为拥塞控制器在检测到丢失时的行为而产生性能上的损失。QUIC实现可以检测到无效重传，然后提高针对乱序的数据包数量阈值或数据包发送时间阈值来减少将来的无效重传和错误的丢包事件。具有自适应的时间阈值的QUIC实现**可以**选择以较小的初始乱序阈值来启动，以最小化恢复延迟。
+将数据包错误地认定为丢包会导致不必要的重传，并有可能因为拥塞控制器在检测到丢失时的行为而产生性能上的损失。QUIC实现可以检测到无效重传，然后提高针对乱序的数据包数量阈值或数据包发送时间阈值来减少将来的无效重传和错误的丢包事件。具有自适应的时间阈值的QUIC实现{{< req_level MAY >}}选择以较小的初始乱序阈值来启动，以最小化恢复延迟。
