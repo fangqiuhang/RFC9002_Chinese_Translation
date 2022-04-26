@@ -21,7 +21,7 @@ OnPacketNumberSpaceDiscarded(pn_space):
   assert(pn_space != ApplicationData)
   RemoveFromBytesInFlight(sent_packets[pn_space])
   sent_packets[pn_space].clear()
-  // 重置丢包检测计时器和PTO计时器
+  // 重置丢包检测计时器和PTO计时器。
   time_of_last_ack_eliciting_packet[pn_space] = 0
   loss_time[pn_space] = 0
   pto_count = 0

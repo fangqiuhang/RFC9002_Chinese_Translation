@@ -59,7 +59,7 @@ GetPtoTimeAndSpace():
   return pto_timeout, pto_space
 
 PeerCompletedAddressValidation():
-  // 假定客户端已隐式地验证了服务器的地址
+  // 假定客户端已隐式地验证了服务器的地址。
   if (终端是服务器):
     return true
   // 当接收到受保护的数据包时，

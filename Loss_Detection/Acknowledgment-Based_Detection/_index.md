@@ -7,7 +7,7 @@ rank: "h2"
 
 Acknowledgment-based loss detection implements the spirit of TCP's Fast Retransmit [RFC5681], Early Retransmit [RFC5827], Forward Acknowledgment [FACK], SACK loss recovery [RFC6675], and RACK-TLP [RFC8985]. This section provides an overview of how these algorithms are implemented in QUIC.
 
-基于确认的丢包检测整合实现了TCP的快速重传（详见《[RFC5681]()》）、早期重传（详见《[RFC5827]()》）、前向确认（详见《[FACK]()》）、SACK丢包恢复（详见《[RFC6675]()》）和RACK-TLP（详见《[RFC8985]()》）的精髓。本节概述了这些算法在QUIC中是如何实现的。
+基于确认的丢包检测吸收了TCP的快速重传（详见《[RFC5681]()》）、早期重传（详见《[RFC5827]()》）、前向确认（详见《[FACK]()》）、SACK丢包恢复（详见《[RFC6675]()》）和RACK-TLP（详见《[RFC8985]()》）的思想。本节概述了这些算法在QUIC中是如何实现的。
 
 A packet is declared lost if it meets all of the following conditions:
 
@@ -15,11 +15,11 @@ A packet is declared lost if it meets all of the following conditions:
 
 * The packet is unacknowledged, in flight, and was sent prior to an acknowledged packet.
 
-* 该数据包处于未被确认、在途且发送时间先于某已被确认的数据包。
+* 该数据包处于未被确认和在途的状态，并且发送时间早于某已被确认的数据包。
 
 * The packet was sent kPacketThreshold packets before an acknowledged packet (Section 6.1.1), or it was sent long enough in the past (Section 6.1.2).
 
-* 该数据包的发送顺序比某已被确认的数据包还要早`kPacketThreshold`的数据包（详见[第6.1.1章]()），或距离其发送已经过去足够久的时间（详见[第6.1.2章]()）。
+* 该数据包的发送顺序比某已被确认的数据包还要早`kPacketThreshold`个数据包（详见[第6.1.1章]()），或距离其发送已经过去足够久的时间（详见[第6.1.2章]()）。
 
 The acknowledgment indicates that a packet sent later was delivered, and the packet and time thresholds provide some tolerance for packet reordering.
 

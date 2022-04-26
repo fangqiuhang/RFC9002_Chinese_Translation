@@ -15,7 +15,7 @@ This design obviates the need for disambiguating between transmissions and retra
 
 QUIC packets can contain multiple frames of different types. The recovery mechanisms ensure that data and frames that need reliable delivery are acknowledged or declared lost and sent in new packets as necessary. The types of frames contained in a packet affect recovery and congestion control logic:
 
-QUIC数据包可以包含不同类型的多种帧。恢复机制确保了要求可靠分发的数据和帧要么被确认，要么被认定为丢包，然后在需要时用新数据包重新发送。数据报中包含的帧类型会影响恢复与拥塞控制的逻辑：
+QUIC数据包可以包含不同类型的多种帧。恢复机制确保了要求可靠分发的数据和帧要么被确认，要么被认定为丢包，然后在需要时用新数据包重新发送。数据包中包含的帧类型会影响恢复与拥塞控制的逻辑：
 
 * All packets are acknowledged, though packets that contain no ack-eliciting frames are only acknowledged along with ack-eliciting packets.
 

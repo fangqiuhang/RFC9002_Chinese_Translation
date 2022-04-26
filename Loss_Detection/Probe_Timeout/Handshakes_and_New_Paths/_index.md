@@ -15,4 +15,4 @@ A connection MAY use the delay between sending a PATH_CHALLENGE and receiving a 
 
 When the Initial keys and Handshake keys are discarded (see Section 6.4), any Initial packets and Handshake packets can no longer be acknowledged, so they are removed from bytes in flight. When Initial or Handshake keys are discarded, the PTO and loss detection timers MUST be reset, because discarding keys indicates forward progress and the loss detection timer might have been set for a now-discarded packet number space.
 
-当初始密钥和握手密钥被弃用后（详见[第6.4章]()），无法确认任何初始数据包和握手数据包，所以可以将他们从在途字节计数中移除。当弃用初始密钥或握手密钥时，{{< req_level MUST >}}重置PTO和丢包检测计时器，因为弃用密钥表明了进度的推进，而丢包检测计时器可能是为已弃用的数据包号空间设置的。
+当初始密钥和握手密钥被弃用后（详见[第6.4章]()），无法确认任何初始数据包和握手数据包，所以可以将它们从在途字节计数中移除。当弃用初始密钥或握手密钥时，{{< req_level MUST >}}重置PTO和丢包检测计时器，因为弃用密钥表明了进度的推进，而丢包检测计时器可能是为已弃用的数据包号空间设置的。

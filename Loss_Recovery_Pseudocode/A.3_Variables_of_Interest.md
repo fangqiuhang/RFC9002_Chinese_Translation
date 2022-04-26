@@ -56,7 +56,7 @@ Multi-modal timer used for loss detection.
 
 `loss_detection_timer`：
 
-:   用于丢包检测的多用途计时器
+:   用于丢包检测的多用途计时器。
 
 pto_count:
 The number of times a PTO has been sent without receiving an acknowledgment.

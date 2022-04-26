@@ -21,7 +21,7 @@ The highest value reported for the ECN-CE counter in the packet number space by 
 
 `ecn_ce_counters[kPacketNumberSpace]`：
 
-:   该数据包号空间中由对端在**ACK帧**中为ECN-CE计数器报告的最大值。该值被用于检测ECN-CE计数是否增加。
+:   该数据包号空间中由对端在**ACK帧**中为`ECN-CE`计数器报告的最大值。该值被用于检测`ECN-CE`计数是否增加。
 
 bytes_in_flight:
 The sum of the size in bytes of all sent packets that contain at least one ack-eliciting or PADDING frame and have not been acknowledged or declared lost. The size does not include IP or UDP overhead, but does include the QUIC header and Authenticated Encryption with Associated Data (AEAD) overhead. Packets only containing ACK frames do not count toward bytes_in_flight to ensure congestion control does not impede congestion feedback.

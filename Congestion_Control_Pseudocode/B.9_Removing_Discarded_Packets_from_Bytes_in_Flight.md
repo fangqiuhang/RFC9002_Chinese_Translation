@@ -18,7 +18,7 @@ indx="Pseudocode_11_9_1" %}}
 
 ```
 RemoveFromBytesInFlight(discarded_packets):
-  // 从在途字节数中移除所有未得到确认的数据包
+  // 从在途字节数中移除所有未得到确认的数据包。
   foreach packet in discarded_packets:
     if packet.in_flight
       bytes_in_flight -= size
