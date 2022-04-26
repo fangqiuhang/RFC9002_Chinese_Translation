@@ -5,8 +5,6 @@ weight: 11070
 rank: "h2"
 ---
 
-This is invoked when an ACK frame with an ECN section is received from the peer.
-
 该过程会在从对端接收到具有ECN相关字段的**ACK帧**时被调用。
 
 {{% block_ref

@@ -5,11 +5,7 @@ weight: 10110
 rank: "h2"
 ---
 
-When Initial or Handshake keys are discarded, packets from the space are discarded and loss detection state is updated.
-
 当弃用初始密钥或握手密钥时，位于这些空间中的数据包会被丢弃，且丢包检测状态会被更新。
-
-Pseudocode for OnPacketNumberSpaceDiscarded follows:
 
 `OnPacketNumberSpaceDiscarded`的伪代码如下：
 
