@@ -1,5 +1,5 @@
 ---
-title: "7.6. 持久拥塞"
+title: "7.6. 持续拥塞"
 anchor: "7.6_Persistent_Congestion"
 weight: 7600
 rank: "h2"
